@@ -12,3 +12,120 @@ Updated: 2023-10-20 05:03:58
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Open+Sans:ital@0;1&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Rokkitt:ital@0;1&family=Syne:wght@400;500&display=swap');
+
+/* Style formulaires contact */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .contact-form .appearance {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    border: none;
+    padding: 1.5em;
+    margin: 0.5em;
+    resize: none;
+ }
+ 
+ .contact-form label {
+    padding-left: 7px;
+ }
+ 
+ .contact-form .wpcf7-submit {
+    background-color: #E0B9B4;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 1em 3.5em;
+ }
+ 
+ /* Style formulaire de commande */ 
+ 
+ .livraison-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ .livraison-form .style {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    border: none;
+    padding: 2em 1.5em;
+    margin: 0.5em;
+ }
+ 
+ .label-color {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 7px;
+ }
+ 
+ /* Style bouton quantité de la page de commande */ 
+ 
+ .buttons-quant {
+     display: flex;
+    align-items: baseline;
+    max-width: 194px;
+    justify-content: space-between;
+    padding-left: 9px;
+ }
+ 
+ .quantity-btn {
+    display: flex;
+    margin-top: 3em;
+ }
+ 
+ .btn-number {
+     border-radius: 5px 0 0 5px;
+     border: none;
+     width: 51px;
+    height: 57px;
+     padding: 19px 4px;
+    text-align: center;
+ }
+ 
+ .buttons-quant .quantity-btn .modify-btns {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .modify-btn {
+     background-color: #dc9f96;
+     border: none;
+     padding: 6px 9px;
+    max-width: 31px;
+    text-align: center;
+    margin-right: 10px;
+ }
+ 
+ .btn-plus {
+     border-radius: 0 5px 0 0;
+     border-bottom: 1px white solid;
+ }
+ 
+ .btn-minus {
+     border-radius: 0 0 5px 0;
+ }
+ 
+ .bouttons-quant .btnOk {
+    margin-bottom: 2em;
+ }
+ 
+ .btnOk {
+     background-color: #e0b9b4;
+     border: none;
+     border-radius: 5px;
+    color: white;
+    padding: 5px 40px 20px;
+ }
+ 
+ .btnOk :hover {
+    color: #C02E44;
+ }
+ 
