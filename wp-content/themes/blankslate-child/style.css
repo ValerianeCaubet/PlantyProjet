@@ -1,132 +1,136 @@
 /*
-Theme Name: BlankSlate Child
-Theme URI: https://github.com/tidythemes/blankslate
-Template: blankslate
+Theme Name: blankslate-child
 Author: TidyThemes
 Author URI: https://github.com/tidythemes
-Description: Donations: https://calmestghost.com/donate. BlankSlate is the definitive WordPress boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
-Tags: accessibility-ready,one-column,two-columns,custom-menu,featured-images,microformats,sticky-post,threaded-comments,translation-ready
-Version: 2023.1697771038
-Updated: 2023-10-20 05:03:58
+Version: 2023
+Requires at least: 5.2
+Tested up to: 6.1
+Requires PHP: 7.0
+License: GNU General Public License v3 or Later
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: blankslate
 
-*/ 
+/* Typographie et general */
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Open+Sans:ital@0;1&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Rokkitt:ital@0;1&family=Syne:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+}
 
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+   padding: 0;
+}
 
 /* Style formulaires contact */
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .contact-form .appearance {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 5px;
-    border: none;
-    padding: 1.5em;
-    margin: 0.5em;
-    resize: none;
- }
- 
- .contact-form label {
-    padding-left: 7px;
- }
- 
- .contact-form .wpcf7-submit {
-    background-color: #E0B9B4;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    padding: 1em 3.5em;
- }
- 
- /* Style formulaire de commande */ 
- 
- .livraison-form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
- }
- 
- .livraison-form .style {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 5px;
-    border: none;
-    padding: 2em 1.5em;
-    margin: 0.5em;
- }
- 
- .label-color {
-    color: #fff;
-    font-size: 20px;
-    padding-left: 7px;
- }
- 
- /* Style bouton quantité de la page de commande */ 
- 
- .buttons-quant {
-     display: flex;
-    align-items: baseline;
-    max-width: 194px;
-    justify-content: space-between;
-    padding-left: 9px;
- }
- 
- .quantity-btn {
-    display: flex;
-    margin-top: 3em;
- }
- 
- .btn-number {
-     border-radius: 5px 0 0 5px;
-     border: none;
-     width: 51px;
-    height: 57px;
-     padding: 19px 4px;
-    text-align: center;
- }
- 
- .buttons-quant .quantity-btn .modify-btns {
-     display: flex;
-     flex-direction: column;
- }
- 
- .modify-btn {
-     background-color: #dc9f96;
-     border: none;
-     padding: 6px 9px;
-    max-width: 31px;
-    text-align: center;
-    margin-right: 10px;
- }
- 
- .btn-plus {
-     border-radius: 0 5px 0 0;
-     border-bottom: 1px white solid;
- }
- 
- .btn-minus {
-     border-radius: 0 0 5px 0;
- }
- 
- .bouttons-quant .btnOk {
-    margin-bottom: 2em;
- }
- 
- .btnOk {
-     background-color: #e0b9b4;
-     border: none;
-     border-radius: 5px;
-    color: white;
-    padding: 5px 40px 20px;
- }
- 
- .btnOk :hover {
-    color: #C02E44;
- }
- 
+   -webkit-appearance: none;
+   appearance: none;
+   border-radius: 5px;
+   border: none;
+   padding: 1.5em;
+   margin: 10px 0px 20px 5px;
+   resize: none;
+}
+
+.contact-form label {
+   padding-left: 7px;
+   color: black;
+   font-size: 20px;
+}
+
+.contact-form .wpcf7-submit {
+   background-color: #E0B9B4;
+   color: #fff;
+   border-radius: 5px;
+   border: none;
+   padding: 1em 3.5em;
+   margin-top: 10px;
+   margin-left: 35px;
+}
+
+/* Style formulaire de commande */ 
+
+.livraison-form {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.livraison-form .style {
+   -webkit-appearance: none;
+   appearance: none;
+   border-radius: 5px;
+   border: none;
+   padding: 2em 1.5em;
+   margin: 10px 0px 25px 5px;
+}
+
+.livraison-form label {
+   color: #fff;
+   font-size: 20px;
+   padding-left: 7px;
+}
+
+/* Style bouton quantité de la page de commande */ 
+
+.buttons-quant {
+	display: flex;
+   max-width: 194px;
+}
+
+
+.btn-number {
+	border-radius: 5px 0 0 5px;
+	border: none;
+	width: 51px;
+   height: 56px;
+	padding: 20px;
+   text-align: center;
+}
+
+.buttons-quant .modify-btns {
+	display: flex;
+	flex-direction: column;
+   justify-content: center;
+   margin-bottom: 11px;
+}
+
+.modify-btn {
+	background-color: #dc9f96;
+	border: none;
+   padding: 5.8px 0px;
+   max-width: 31px;
+   text-align: center;
+   margin-right: 10px;
+}
+
+.btn-plus {
+	border-radius: 0 5px 0 0;
+	border-bottom: 1px white solid;
+}
+
+.btn-minus {
+	border-radius: 0 0 5px 0;
+}
+
+
+.btnOk {
+	background-color: #e0b9b4;
+	border: none;
+	border-radius: 5px;
+   color: white;
+   padding: 20px 35px;
+   text-align: center;
+}
+
+.btnOk :hover {
+   color: #C02E44;
+}
