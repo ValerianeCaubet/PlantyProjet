@@ -14,6 +14,7 @@ Text Domain: blankslate
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+
 body * {
    font-family: 'Syne', sans-serif;
 }
@@ -53,7 +54,6 @@ body * {
    border: none;
    padding: 1em 3.5em;
    margin-top: 10px;
-   margin-left: 35px;
 }
 
 /* Style formulaire de commande */ 
@@ -88,7 +88,7 @@ body * {
 
 
 .btn-number {
-	border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px !important;
 	border: none;
 	width: 51px;
    height: 56px;
@@ -113,19 +113,19 @@ body * {
 }
 
 .btn-plus {
-	border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0 !important;
 	border-bottom: 1px white solid;
 }
 
 .btn-minus {
-	border-radius: 0 0 5px 0;
+	border-radius: 0 0 5px 0 !important;
 }
 
 
 .btnOk {
 	background-color: #e0b9b4;
 	border: none;
-	border-radius: 5px;
+	border-radius: 5px !important;
    color: white;
    padding: 20px 35px;
    text-align: center;
